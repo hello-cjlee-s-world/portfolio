@@ -1,6 +1,10 @@
 import { motion } from 'motion/react';
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+// @ts-ignore
+import autoMain from '../../assets/autoMain.png';
+// @ts-ignore
+import fetcherCode from '../../assets/fetcherCode.png';
 
 export function Projects() {
   const projects = [
@@ -12,7 +16,7 @@ export function Projects() {
       '• 거래 이력 및 자산 스냅샷 저장',
       '• REST API 제공 (UI 및 외부 시스템 연동)',
       '• PostgreSQL 기반 데이터 영속성 관리 '],
-      image: 'https://images.unsplash.com/photo-1687524690542-2659f268cde8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWIlMjBhcHBsaWNhdGlvbnxlbnwxfHx8fDE3NzA4OTk3NDl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: fetcherCode,
       tags: ['Go', 'PostgreSQL', 'REST API'],
       github: 'https://github.com/hello-cjlee-s-world/autoJoosik-market-data-fetcher',
       gradient: 'from-blue-600 to-purple-600',
@@ -24,7 +28,7 @@ export function Projects() {
       '• 계좌 자산 및 수익률 통계 시각화',
       '• 매수/매도 이력 조회',
       '• 스케줄러 실행/중지 제어'],
-      image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzcwODc3Nzg1fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: autoMain,
       tags: ['Java', 'Spring Boot', 'React', 'TypeScript', 'Tailwind CSS'],
       github: 'https://github.com/hello-cjlee-s-world/autoJoosik',
       demo: 'https://cjlee.kr/auto/',
