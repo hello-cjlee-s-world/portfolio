@@ -4,38 +4,6 @@ import { Award, Calendar, ExternalLink, CheckCircle } from 'lucide-react';
 export function Certifications() {
   const certifications = [
     {
-      title: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      date: '2025년 6월',
-      description: '클라우드 아키텍처 설계 및 구현에 대한 전문성 인증',
-      credentialUrl: 'https://aws.amazon.com/certification/',
-      color: 'from-orange-600 to-red-600',
-    },
-    {
-      title: 'Google Professional Cloud Developer',
-      issuer: 'Google Cloud',
-      date: '2025년 3월',
-      description: '구글 클라우드 플랫폼을 활용한 애플리케이션 개발 인증',
-      credentialUrl: 'https://cloud.google.com/certification',
-      color: 'from-blue-600 to-cyan-600',
-    },
-    {
-      title: 'React Advanced Certification',
-      issuer: 'Meta',
-      date: '2024년 12월',
-      description: 'React 고급 개념 및 베스트 프랙티스 마스터',
-      credentialUrl: 'https://www.facebook.com/business/learn',
-      color: 'from-cyan-600 to-blue-600',
-    },
-    {
-      title: 'MongoDB Certified Developer',
-      issuer: 'MongoDB University',
-      date: '2024년 9월',
-      description: 'NoSQL 데이터베이스 설계 및 최적화 전문가',
-      credentialUrl: 'https://university.mongodb.com/',
-      color: 'from-green-600 to-emerald-600',
-    },
-    {
       title: '정보처리기사',
       issuer: '한국산업인력공단',
       date: '2024년 6월',

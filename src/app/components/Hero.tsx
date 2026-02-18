@@ -28,21 +28,25 @@ export function Hero() {
             <span className="text-sm text-zinc-300">Available for hire</span>
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             className="text-6xl md:text-8xl lg:text-9xl mb-8 tracking-tighter leading-none"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            initial={{opacity: 0, y: 30}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 0.8, delay: 0.3}}
           >
-            <span className="block mb-2">Creative</span>
-            <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              Developer
+            <span
+              className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+              Creative Developer
+            </span>
+            <span
+              className="block pt-5 text-white bg-clip-text text-transparent">
+              이충주
             </span>
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             className="text-xl md:text-2xl text-zinc-400 mb-12 max-w-3xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
@@ -58,7 +62,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.7 }}
           >
             <a
-              href="https://github.com"
+              href="https://github.com/hello-cjlee-s-world"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative p-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all"
@@ -69,18 +73,7 @@ export function Hero() {
               </span>
             </a>
             <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative p-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all"
-            >
-              <Linkedin size={24} />
-              <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity">
-                LinkedIn
-              </span>
-            </a>
-            <a
-              href="mailto:hello@example.com"
+              href="mailto:cndwn213@naver.com"
               className="group relative p-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all"
             >
               <Mail size={24} />

@@ -9,14 +9,14 @@ export function Contact() {
     {
       icon: <Mail size={20} />,
       label: '이메일',
-      value: 'hello@example.com',
-      href: 'mailto:hello@example.com',
+      value: 'cndwn213@naver.com',
+      href: 'mailto:cndwn213@naver.com',
       gradient: 'from-red-600 to-orange-600',
     },
     {
       icon: <Phone size={20} />,
       label: '전화',
-      value: '+82 10-1234-5678',
+      value: '+82 10-2735-7192',
       href: 'tel:+821012345678',
       gradient: 'from-green-600 to-teal-600',
     },
@@ -36,23 +36,11 @@ export function Contact() {
       href: 'https://github.com',
       gradient: 'from-gray-600 to-gray-800',
     },
-    {
-      icon: <Linkedin size={24} />,
-      label: 'LinkedIn',
-      href: 'https://linkedin.com',
-      gradient: 'from-blue-600 to-blue-800',
-    },
-    {
-      icon: <Twitter size={24} />,
-      label: 'Twitter',
-      href: 'https://twitter.com',
-      gradient: 'from-sky-600 to-blue-600',
-    },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    // console.log('Form submitted:', formData);
   };
 
   return (

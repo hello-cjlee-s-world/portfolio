@@ -51,7 +51,7 @@ export default function App() {
       
       <footer className="relative z-10 border-t border-zinc-800/50 backdrop-blur-sm py-8">
         <div className="max-w-6xl mx-auto px-6 text-center text-zinc-500">
-          <p>© 2026 포트폴리오. Crafted with passion.</p>
+          {/*<p>© 2026 포트폴리오. Crafted with passion.</p>*/}
         </div>
       </footer>
     </div>
