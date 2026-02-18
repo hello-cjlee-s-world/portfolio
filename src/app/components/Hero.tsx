@@ -55,11 +55,11 @@ export function Hero() {
             코드로 아름다움을 만듭니다.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="flex items-center justify-center gap-6 mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
+            initial={{opacity: 0, y: 20}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 0.8, delay: 0.7}}
           >
             <a
               href="https://github.com/hello-cjlee-s-world"
@@ -67,28 +67,31 @@ export function Hero() {
               rel="noopener noreferrer"
               className="group relative p-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all"
             >
-              <Github size={24} />
-              <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity">
+              <Github size={24}/>
+              <span
+                className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity">
                 GitHub
               </span>
             </a>
             <a
-              href="mailto:cndwn213@naver.com"
+              href="mailto:cndwn213@naver.com?subject=포트폴리오 문의&body=안녕하세요,%20프로젝트를%20보고%20연락드립니다."
               className="group relative p-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all"
             >
-              <Mail size={24} />
-              <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity">
+              <Mail size={24}/>
+              <span
+                className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity">
                 Email
               </span>
             </a>
+
           </motion.div>
 
           <motion.button
             onClick={scrollToNext}
             className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
+            initial={{opacity: 0, y: 20}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 0.8, delay: 0.9}}
           >
             <span className="font-medium">Explore My Work</span>
             <ArrowDown size={18} className="group-hover:translate-y-1 transition-transform" />

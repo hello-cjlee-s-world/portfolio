@@ -10,7 +10,7 @@ export function Contact() {
       icon: <Mail size={20} />,
       label: '이메일',
       value: 'cndwn213@naver.com',
-      href: 'mailto:cndwn213@naver.com',
+      href: 'mailto:cndwn213@naver.com?subject=포트폴리오 문의&body=안녕하세요,%20프로젝트를%20보고%20연락드립니다.',
       gradient: 'from-red-600 to-orange-600',
     },
     {
