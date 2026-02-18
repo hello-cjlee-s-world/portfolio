@@ -6,7 +6,7 @@ export function Certifications() {
     {
       title: '정보처리기사',
       issuer: '한국산업인력공단',
-      date: '2024년 6월',
+      date: '2024년 9월',
       description: '정보시스템 개발 및 운영에 대한 국가기술자격',
       credentialUrl: '#',
       color: 'from-purple-600 to-pink-600',
