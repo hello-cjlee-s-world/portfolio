@@ -1,10 +1,10 @@
 import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, Twitter, MapPin, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
+import { Mail, Github, MapPin, Phone, Send } from 'lucide-react';
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-
+  const [submitStatus, setSubmitStatus] = useState('');
   const contactInfo = [
     {
       icon: <Mail size={20} />,
@@ -40,7 +40,20 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // console.log('Form submitted:', formData);
+
+    if (!formData.name || !formData.email || !formData.message) {
+      setSubmitStatus('모든 항목을 입력해주세요.');
+      return;
+    }
+
+    const subject = encodeURIComponent(`[포트폴리오 문의] ${formData.name}님의 메시지`);
+    const body = encodeURIComponent(
+      `이름: ${formData.name}\n이메일: ${formData.email}\n\n메시지:\n${formData.message}`,
+    );
+
+    window.location.href = `mailto:cndwn213@naver.com?subject=${subject}&body=${body}`;
+    setSubmitStatus('이메일 앱을 열었습니다. 전송을 완료해주세요.');
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
@@ -194,6 +207,9 @@ export function Contact() {
                 <span>전송하기</span>
                 <Send size={20} />
               </motion.button>
+              {submitStatus && (
+                <p className="text-sm text-zinc-300">{submitStatus}</p>
+              )}
             </form>
           </div>
         </motion.div>
