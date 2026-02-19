@@ -17,7 +17,7 @@ export function Contact() {
       icon: <Phone size={20} />,
       label: '전화',
       value: '+82 10-2735-7192',
-      href: 'tel:+821012345678',
+      href: 'tel:+821027357192',
       gradient: 'from-green-600 to-teal-600',
     },
     {
