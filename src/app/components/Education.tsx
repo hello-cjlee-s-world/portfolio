@@ -11,8 +11,6 @@ export function Education() {
       description: '컴퓨터 과학의 기초부터 고급 주제까지 폭넓게 학습. 데이터 구조, 알고리즘, 소프트웨어 공학 전공',
       achievements: [
         'GPA: 3.53/4.5',
-        '우수 졸업 논문상 수상',
-        '프로그래밍 경진대회 1위',
       ],
       gradient: 'from-blue-600 to-purple-600',
     },
