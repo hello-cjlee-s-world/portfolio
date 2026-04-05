@@ -6,10 +6,18 @@ export function Certifications() {
     {
       title: '정보처리기사',
       issuer: '한국산업인력공단',
-      date: '2024년 9월',
-      description: '정보시스템 개발 및 운영에 대한 국가기술자격',
+      date: '2025년 9월',
+      description: '정보처리기사는 한국산업인력공단이 주관하는 IT 분야 국가기술자격으로, 소프트웨어 개발 생명주기(분석, 설계, 구현, 테스트, 운영) 전반에 걸친 핵심 기술 능력을 검증합니다.',
       credentialUrl: '#',
       color: 'from-purple-600 to-pink-600',
+    },
+    {
+      title: 'SQLD',
+      issuer: '한국데이터산업진흥원',
+      date: '2026년 3월',
+      description: 'SQLD(SQL Developer)는 한국데이터산업진흥원이 주관하는 국가공인 자격증으로, 데이터베이스 테이블 설계(모델링)와 이를 조작하는 SQL 구문 작성 능력을 평가합니다.',
+      credentialUrl: '#',
+      color: 'from-blue-600 to-purple-600',
     },
   ];
 
