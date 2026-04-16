@@ -2,9 +2,11 @@ import { motion } from 'motion/react';
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 // @ts-ignore
-import autoMain from '../../assets/autoMain.png';
+import autoMainImage from '../../assets/autoMain.png';
 // @ts-ignore
-import fetcherCode from '../../assets/fetcherCode.png';
+import fetcherCodeImage from '../../assets/fetcherCode.png';
+// @ts-ignore
+import mcpImage from '../../assets/mcp.png';
 
 export function Projects() {
   const projects = [
@@ -16,7 +18,7 @@ export function Projects() {
       '• 거래 이력 및 자산 스냅샷 저장',
       '• REST API 제공 (UI 및 외부 시스템 연동)',
       '• PostgreSQL 기반 데이터 영속성 관리 '],
-      image: fetcherCode,
+      image: fetcherCodeImage,
       tags: ['Go', 'PostgreSQL', 'REST API'],
       github: 'https://github.com/hello-cjlee-s-world/autoJoosik-market-data-fetcher',
       gradient: 'from-blue-600 to-purple-600',
@@ -28,11 +30,21 @@ export function Projects() {
       '• 계좌 자산 및 수익률 통계 시각화',
       '• 매수/매도 이력 조회',
       '• 스케줄러 실행/중지 제어'],
-      image: autoMain,
+      image: autoMainImage,
       tags: ['Java', 'Spring Boot', 'React', 'TypeScript', 'Tailwind CSS'],
       github: 'https://github.com/hello-cjlee-s-world/autoJoosik',
       demo: 'https://cjlee.kr/auto/',
       gradient: 'from-pink-600 to-rose-600',
+    },
+    {
+      title: '주식 자동 매매 MCP Server',
+      description: ['자동 매매 백엔드 시스템 REST API 를 AI Agent 가 접근하여 호출 할 수 있는 서비스 입니다.',
+        '• 주식정보 조회 및 매매 가능',
+        ],
+      image: mcpImage,
+      tags: ['Go', 'Http', 'REST API', 'MCP', 'AI'],
+      github: 'https://github.com/hello-cjlee-s-world/autoJoosik-mcp-server',
+      gradient: 'from-zinc-600 to-grey-200',
     },
   ];
 
